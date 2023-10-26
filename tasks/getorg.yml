@@ -1,0 +1,11 @@
+---
+- name: Query Meraki Organization
+  meraki_organization:
+    auth_key: "{{ api_key }}"
+    org_name: "{{ org }}"
+    state: query
+  register: meraki_result
+
+- name: Display Meraki Result
+  debug:
+    var: meraki_result

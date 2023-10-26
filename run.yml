@@ -1,0 +1,7 @@
+---
+- name: Your Root-Level Playbook
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Include Meraki Tasks
+      import_tasks: tasks/getorg.yml

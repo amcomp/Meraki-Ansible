@@ -1,0 +1,3 @@
+- name: Debug API Key
+  debug:
+    var: api_key
