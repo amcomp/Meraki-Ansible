@@ -5,3 +5,4 @@
   tasks:
     - name: Include Meraki Tasks
       import_tasks: tasks/getorg.yml
+      import_tasks: tasks/SSID.yml

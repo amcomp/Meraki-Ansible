@@ -1,0 +1,9 @@
+- name: Query SSID
+  community.meraki.meraki_ssid:
+    auth_key: "{{ api_key }}"
+    state: enable
+    org_name: "{{ org }}"
+    net_name: "{{ main }}"
+    name: test
+    net_id: 5
+  delegate_to: localhost
