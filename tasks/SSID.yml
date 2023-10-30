@@ -1,9 +1,10 @@
-- name: Query SSID
-  community.meraki.meraki_ssid:
+- name: Enable and name SSID
+  cisco.meraki.meraki_mr_ssid:
     auth_key: "{{ api_key }}"
-    state: enable
+    state: present
     org_name: "{{ org }}"
     net_name: "{{ main }}"
     name: test
-    net_id: 5
+    enabled: False
+    visible: false
   delegate_to: localhost
