@@ -5,6 +5,11 @@
     org_name: "{{ org }}"
     net_name: "{{ main }}"
     name: test
-    enabled: False
+    enabled: false
     visible: false
-  delegate_to: localhost
+    wpa_encryption_mode: "WPA2 only"
+    auth_mode: "psk"
+    psk: "{{ psk }}"
+  delegate_to: localhosts
+
+  # working playbook for modifying meraki SSID, for function, it needs pointed at target ssid, and enabled/visibility need switched to true
