@@ -1,5 +1,5 @@
 ---
-- name: Your Root-Level Playbook
+- name: Root Playbook
   hosts: localhost
   gather_facts: false
   tasks:
