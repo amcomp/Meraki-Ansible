@@ -3,7 +3,7 @@
     auth_key: "{{ api_key }}"
     state: present
     org_name: "{{ org }}"
-    net_name: "{{ main }}"
+    net_name: "{{ network_names }}"
     name: test
     enabled: false
     visible: false
